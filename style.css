@@ -1,0 +1,10 @@
+.navbar{
+    background: rgba(250, 77, 3, 0.993);
+}
+.clik{
+    border-radius: 10%;
+    background-color: rgb(11, 104, 39) !important;
+}
+.map{
+    background: linear-gradient(#e66465, #9198e5);
+}
