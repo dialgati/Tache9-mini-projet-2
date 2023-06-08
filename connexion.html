@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+     crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+      crossorigin="anonymous"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+    <title>Barcelona collection</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#"> <span class="fst-italic text-warning">BOU</span>TIC</a>
+          <button class="navbar-toggler  text-light" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation"><h4 class="pe-2">Menu</h4>
+            <span><i class="fa-solid fa-bars pt-1 "></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4 text-white">
+              <li class="nav-item  pe-3">
+                <a class="nav-link text-white"href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item  pe-3">
+                <a class="nav-link text-white" href="produit.html">Produits</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-white" href="connexion.html">Connexion</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-white" href="inscription.html">Inscription</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex  " role="search">
+              <input class="form-control me-3 w-50" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-primary rounded-5 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+              <a href="# " class="panier text-center">
+                <i class="fa-solid fa-cart-shopping fs-4 text-white me-2"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+       <!-- connexion -->
+       <section id="connexion" class=" bg-gradient py-5">
+        <div class="container text-white bg-primary w-75 py-2">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <h1 class="text-center text-danger-emphasis">Connexion</h1>
+              <form method="get" class="text-center">
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-secondary mt-4 w-50">Submit</button>
+              </form>
+              <div class=" text-primary">
+                <a type="text" class="btn btn-light my-4"
+                 data-bs-toggle="modal" data-bs-target="#exampleModal" 
+                 data-bs-whatever="@mdo">Open modal for @mdo</a>
+                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen-xl-down">
+                    <div class="modal-content">
+                      <div class="modal-header border-0 ">
+                        <h1 class="modal-title fs-5 text-center pt-4" id="exampleModalLabel">Paiement</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <h4 class="fs-5 text-dark">Nom du proprietaire carte</h4>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                          </div>
+                          <div class="mb-3">
+                            <h4 class="fs-5 text-dark">Numero de la carte</h4>
+                            <input type="number" class="form-control" id="recipient-name" placeholder="number of card">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer border-0">
+                        <button type="submit" class="btn btn-warning text-light rounded-5 text-center">Valider</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- footer -->
+       <section class="bg-secondary py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <a class="navbar-brand fs-1" href="#"> <span class="fst-italic text-warning">BOU</span>TIC</a>
+            </div>
+            <div class="col-md-4">
+              <p class="text-light">Copyright © Your Website 2023</p>
+            </div>
+            <div class="col-md-4">
+              <p class="text-light">Privacy Policy Terms of Use</p>
+            </div>
+          </div>
+        </div>
+        </section>
+</body>
+</html>
